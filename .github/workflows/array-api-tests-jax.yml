@@ -1,0 +1,10 @@
+name: Array API Tests (JAX)
+
+on: [push, pull_request]
+
+jobs:
+  array-api-tests-jax:
+    uses: ./.github/workflows/array-api-tests.yml
+    with:
+      package-name: jax
+      pytest-extra-args: -k top_k
