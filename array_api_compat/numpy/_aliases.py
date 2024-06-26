@@ -62,7 +62,7 @@ matrix_transpose = get_xp(np)(_aliases.matrix_transpose)
 tensordot = get_xp(np)(_aliases.tensordot)
 
 
-def top_k(a, k, /, *, axis=-1, largest=True):
+def top_k(a, k, /, axis=-1, *, largest=True):
     """
     Returns the ``k`` largest/smallest elements and corresponding
     indices along the given ``axis``.

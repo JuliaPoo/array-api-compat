@@ -1,19 +1,13 @@
 import jax
-from typing import TYPE_CHECKING
-if TYPE_CHECKING:
-    from typing import Optional, Tuple
-
-    from ..common._typing import Array
-
 
 def top_k(
-    x: Array,
-    k: int,
+    x,
+    k,
     /,
-    axis: Optional[int] = None,
+    axis=None,
     *,
-    largest: bool = True,
-) -> Tuple[Array, Array]:
+    largest=True,
+):
 
     # `swapaxes` is used to implement
     # the `axis` kwarg
