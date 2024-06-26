@@ -1,4 +1,6 @@
+from jax.numpy import * # quick hack
 from jax import *
+
 
 def top_k(
     x,

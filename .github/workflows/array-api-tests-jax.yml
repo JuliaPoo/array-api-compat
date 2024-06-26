@@ -7,4 +7,4 @@ jobs:
     uses: ./.github/workflows/array-api-tests.yml
     with:
       package-name: jax
-      pytest-extra-args: -k top_k
+      pytest-extra-args: ./array-api-tests/array-api-tests/test_searching_functions.py::test_top_k
