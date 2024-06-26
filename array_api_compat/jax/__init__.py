@@ -1,4 +1,4 @@
-import jax
+from jax import *
 
 def top_k(
     x,
@@ -11,10 +11,10 @@ def top_k(
 
     # `swapaxes` is used to implement
     # the `axis` kwarg
-    x = jax.numpy.swapaxes(x, axis, -1)
-    vals, args = jax.lax.top_k(x, k)
-    vals = jax.numpy.swapaxes(vals, axis, -1)
-    args = jax.numpy.swapaxes(args, axis, -1)
+    x = numpy.swapaxes(x, axis, -1)
+    vals, args = lax.top_k(x, k)
+    vals = numpy.swapaxes(vals, axis, -1)
+    args = numpy.swapaxes(args, axis, -1)
     return vals, args
 
 
