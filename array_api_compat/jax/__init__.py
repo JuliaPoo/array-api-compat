@@ -1,5 +1,42 @@
-from jax.numpy import * # quick hack
-from jax import *
+from jax.numpy import (
+    # Constants
+    e,
+    inf,
+    nan,
+    pi,
+    newaxis,
+    # Dtypes
+    bool,
+    float32,
+    float64,
+    int8,
+    int16,
+    int32,
+    int64,
+    uint8,
+    uint16,
+    uint32,
+    uint64,
+    complex64,
+    complex128,
+    iinfo,
+    finfo,
+    can_cast,
+    result_type,
+    # functions
+    zeros,
+    all,
+    isnan,
+    isfinite,
+    reshape
+)
+from jax.numpy import (
+    asarray,
+    s_,
+    int_,
+    argpartition,
+    take_along_axis
+)
 
 
 def top_k(
