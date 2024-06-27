@@ -43,8 +43,8 @@ def top_k(
         slice = slice_start + (s_[:k],)
         topk_indices = indices_array[slice]
 
+    topk_indices = topk_indices.astype(np.int_)
     topk_values = take_along_axis(arr, topk_indices, axis=axis)
-
     return (topk_values, topk_indices)
 
 
