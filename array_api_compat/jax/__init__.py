@@ -25,7 +25,7 @@ def top_k(
         raise ValueError(f'k(={k}) provided must be positive.')
 
     positive_axis: int
-    _arr = asarray(a)
+    _arr = asarray(x)
     if axis is None:
         arr = _arr.ravel()
         positive_axis = 0
