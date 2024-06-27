@@ -26,6 +26,7 @@ from jax.numpy import (
     # functions
     zeros,
     all,
+    any,
     isnan,
     isfinite,
     reshape
@@ -81,4 +82,4 @@ __all__ = ['top_k', 'e', 'inf', 'nan', 'pi', 'newaxis', 'bool',
            'int64', 'uint8', 'uint16', 'uint32', 'uint64',
            'complex64', 'complex128', 'iinfo', 'finfo',
            'can_cast', 'result_type', 'zeros', 'all', 'isnan',
-           'isfinite', 'reshape']
+           'isfinite', 'reshape', 'any']
