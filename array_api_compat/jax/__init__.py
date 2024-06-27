@@ -76,4 +76,9 @@ def top_k(
     return (topk_values, topk_indices)
 
 
-__all__ = ['top_k']
+__all__ = ['top_k', 'e', 'inf', 'nan', 'pi', 'newaxis', 'bool',
+           'float32', 'float64', 'int8', 'int16', 'int32',
+           'int64', 'uint8', 'uint16', 'uint32', 'uint64',
+           'complex64', 'complex128', 'iinfo', 'finfo',
+           'can_cast', 'result_type', 'zeros', 'all', 'isnan',
+           'isfinite', 'reshape']
